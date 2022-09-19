@@ -28,7 +28,7 @@ def decrypt(message, password):
     encrypted_message = ''
 
     for index, ch in enumerate(message):
-        pass_ch = password[index%len(password)]
+        pass_ch = password[index % len(password)]
         key = ordinal_value[pass_ch]
         ord_of_character = ordinal_value[ch]
         shifted_ord_of_characters = (ord_of_character - key) % len(alphabet)
